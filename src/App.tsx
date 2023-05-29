@@ -1,11 +1,14 @@
-import './App.css'
+import Navbar from "./components/navbar/Navbar"
+import { Outlet } from "react-router-dom"
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <h1>TRACTIAN CHALLENGE</h1>
-    </>
+    <div>
+      <Navbar />
+      <div>
+        <Outlet />
+      </div>
+    </div>
   )
 }
 
